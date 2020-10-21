@@ -83,6 +83,7 @@ namespace xadrez
                         mat[direita.linha - 1, direita.coluna] = true;
                     }
                 }
+
             }
             else
             {
