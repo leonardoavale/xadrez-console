@@ -42,6 +42,16 @@ namespace xadrez_console
                         Console.WriteLine(e.Message);
                         Console.ReadLine();
                     }
+                    catch(IndexOutOfRangeException e)
+                    {
+                        Console.WriteLine("Posição incompleta! Erro: " + e.Message);
+                        Console.ReadLine();
+                    }
+                    catch(FormatException e)
+                    {
+                        Console.WriteLine("Formato da entrada errado! Erro: " + e.Message);
+                        Console.ReadLine();
+                    }
 
                 }
                 Console.Clear();
